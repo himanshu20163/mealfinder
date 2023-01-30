@@ -14,7 +14,7 @@ async function image_meal() {
     }
     
     else if(res.meals == null){
-        error.innerHTML = "No Meals Founds";
+        error.innerHTML = "Sorry, we didn't find any meal!";
     }
     else{
     
