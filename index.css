@@ -110,6 +110,8 @@
      padding: 0px 0px 20px 0px;
      flex-wrap: wrap;
      margin: 10px;
+      height:85%;
+      overflow-y:scroll;
  }
 
  #meal_name {
