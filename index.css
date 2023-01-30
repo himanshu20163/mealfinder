@@ -1,0 +1,136 @@
+ *{
+        margin:0px;
+        padding:0px;
+        box-sizing: border-box;
+    }
+    .main_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        height: 20%;
+        padding: 20px;
+    }
+    img {
+        padding: 0;
+  width: 310px;
+  margin: 0px;
+  border-radius: 10px;
+  border: 2px solid #ffd0d0;
+}
+img:hover{
+    transform: rotate(2deg);
+}
+.input_area {
+    width: 50%;
+}
+    #searchbox{
+    border-style: none;
+    border-radius: 50px;
+    height: 45px;
+    width: 78%;
+   border: 2px solid #d65108;
+   padding-left: 50px;
+   font-size: 18px;
+    }
+    #searchbox:hover{
+       outline: none;
+    }
+    h1 ,h3{
+        margin: 20px;
+        color:black;
+    }
+    button {
+    position: absolute;
+    width: 4%;
+    height: 45px;
+    right: 36%;
+    /* left: 342px; */
+    background-color: #d65108;
+    color: white;
+    border-style: none;
+    border-radius: 0px 50px 50px 0px;
+    font-size: 24px;
+}
+    #show_data{
+        margin-top:50px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-content: center;
+  margin:10px;
+}
+    #title {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    font-weight: bold;
+}
+#box{
+        display: flex;
+    flex-direction: column;
+    margin: 10px;
+    box-shadow: 2px 3px 2px black !important;
+    padding: 20px 20px;
+    justify-content: center;
+    align-items: center;
+}
+#p_data{
+        font-size: 24px;
+    font-weight: bold;
+    margin: 10px;
+}
+.fa{
+    display: none;
+}
+
+#main_box
+{
+	display: flex;
+	height: -1%;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 20px 0px;
+    flex-wrap: wrap;
+    margin:10px;
+}
+#meal_name{
+	color:black;
+}
+#box{
+	display: flex;
+    flex-direction: column;
+    margin: 10px;
+    box-shadow: 2px 3px 2px black;
+    padding: 20px 20px;
+    justify-content: center;
+    align-items: center;
+}
+#get{
+	background-color: #d65108;
+	width:40%;
+	border-style: none;
+	color:white;
+	border-radius: 10px;
+}
+#pop_h3{
+	color:black;
+    text-align: center;
+}
+#model_box{
+    position:fixed;
+    background-color: #d65108;
+    top: 180px;
+    width: 8;
+    left: 100px;
+    right: 100px;
+}
+#img_model{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+}
+
