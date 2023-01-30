@@ -30,6 +30,7 @@ async function image_meal() {
                 
                 let box = document.createElement("div");
                 box.setAttribute("id","box");
+                box.setAttribute("style","padding:10px");
                 box.style.margin="20px";
                 box.style.boxShadow = "0px 0px 0px 10px black"
         
@@ -40,7 +41,8 @@ async function image_meal() {
                 para.innerText=`${ele.strMeal}`;
                 const button1 = document.createElement("input")
                 button1.type="button";
-                button1.setAttribute("id",`${ele.idMeal}`);
+                let ans = `${ele.idMeal}`;
+                button1.setAttribute("id",ans);
                 button1.style.width="150px"
                 button1.style.height="50px"
                 button1.style.backgroundColor="#d65108";
@@ -56,7 +58,7 @@ async function image_meal() {
                 //popup data
                 const popup_box = document.createElement("div")
                 popup_box.setAttribute("id",`${ele.idMeal}`);
-                popup_box.setAttribute("style","display:none;");
+                popup_box.setAttribute("style","display:none;overflowY:scroll");
                 popup_box_h3 = document.createElement("h3")
                 popup_box_h3.setAttribute("id","pop_h3");
                 
@@ -81,20 +83,15 @@ async function image_meal() {
                        popup_box.setAttribute("style","display:show"); 
                     }
                     model.style.display = "block";
-                    const cross = document.getElementsByClassName("fa")[0];
+                    const cross = document.getElementById("close");
+                    console.log(cross);
                     cross.style.display = "block";
-                    cross.style.float ="right"
-                    // cross.style.fontSize: "28px";
-                    // cross.style.color="black";
                     cross.style.marginRight="30px"
-                    cross.style.marginTop="10px"
-                    cross.style.backgroundColor="white";
-                    cross.style.borderRadius="50%";
-                    cross.style.padding="10px";
+                    cross.style.marginTop="20px"
                     console.log(cross);
                     console.log(popup_box);
                 })
-                const cross = document.getElementsByClassName("fa")[0];   
+                const cross = document.getElementById("close");   
                 cross.addEventListener('click',()=>{
                     popup_box.setAttribute("style","display:none");
                     model.style.display = "none";
